@@ -1,0 +1,23 @@
+Unknown configuration key throttle
+vbam: could not connect to socket
+vbam: No such file or directory
+VBA-M (BBA) [SDL]
+Searching for file vbam.cfg
+Searching current directory: /home/rqin37/Desktop/CS2110/tl4-summer18/tl4-summer18
+Searching home directory: /home/rqin37/.vbam
+Searching data directory: /usr/share/vbam
+Searching system config directory: /etc
+Reading configuration file.
+Searching for file vba-over.ini
+Searching current directory: /home/rqin37/Desktop/CS2110/tl4-summer18/tl4-summer18
+Searching home directory: /home/rqin37/.vbam
+Searching data directory: /usr/share/vbam
+Searching system config directory: /etc
+vba-over.ini NOT FOUND (using emulator settings)
+Trying patch TimedLab04.ips
+Trying patch TimedLab04.ups
+Trying patch TimedLab04.ppf
+Trying to start LIRC: Failed
+Color depth: 32
+Shutting down
+15:46:33 25.07.2018: Wrote battery

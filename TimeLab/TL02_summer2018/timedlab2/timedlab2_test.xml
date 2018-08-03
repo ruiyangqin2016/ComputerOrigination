@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-suite>
+    <test-case>
+        <name>btree_search(tree0, 3)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ROOT</address>
+                <value>x6000</value>
+            </test-value>
+            <test-value>
+                <address>QUERY</address>
+                <value>3</value>
+            </test-value>
+            <test-array>
+                <address>ROOT</address>
+                <value>x7000, x6004, x6008, x000B, x7007, x600C, x0000, x0006, x700E, x6010, x0000, x007B ,x7015, x0000, x0000, x0002, x701C, x6018, x6014, x004B, x7023, x0000, x0000, x0066, x702A, x0000, x601C, x0011, x7031, x0000, x0000, x003B</value>
+            </test-array>
+            <test-subr>
+                <name>btree_search</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x6000, 3</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-stdout points="3">
+                <value>Did not find the data</value>
+            </test-stdout>
+            <test-subr>
+                <answer>x0000</answer>
+                <calls>
+                    <call><name>btree_search</name><params>x6004, 3</params></call>
+                </calls>
+                <points>
+                    <answer>2</answer>
+                    <calls>3</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>2</params>
+                    <read-answer>0</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    <test-case>
+        <name>btree_search(tree0, 75)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ROOT</address>
+                <value>x6000</value>
+            </test-value>
+            <test-value>
+                <address>QUERY</address>
+                <value>75</value>
+            </test-value>
+            <test-array>
+                <address>ROOT</address>
+                <value>x7000, x6004, x6008, x000B, x7007, x600C, x0000, x0006, x700E, x6010, x0000, x007B ,x7015, x0000, x0000, x0002, x701C, x6018, x6014, x004B, x7023, x0000, x0000, x0066, x702A, x0000, x601C, x0011, x7031, x0000, x0000, x003B</value>
+            </test-array>
+            <test-subr>
+                <name>btree_search</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x6000, 75</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-stdout points="3">
+                <value>Found the data at Node E</value>
+            </test-stdout>
+            <test-subr>
+                <answer>x6010</answer>
+                <calls>
+                    <call><name>btree_search</name><params>x6008, 75</params></call>
+                </calls>
+                <points>
+                    <answer>2</answer>
+                    <calls>3</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>2</params>
+                    <read-answer>0</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    <test-case>
+        <name>btree_search(tree0, 11)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ROOT</address>
+                <value>x6000</value>
+            </test-value>
+            <test-value>
+                <address>QUERY</address>
+                <value>11</value>
+            </test-value>
+            <test-array>
+                <address>ROOT</address>
+                <value>x7000, x6004, x6008, x000B, x7007, x600C, x0000, x0006, x700E, x6010, x0000, x007B ,x7015, x0000, x0000, x0002, x701C, x6018, x6014, x004B, x7023, x0000, x0000, x0066, x702A, x0000, x601C, x0011, x7031, x0000, x0000, x003B</value>
+            </test-array>
+            <test-subr>
+                <name>btree_search</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x6000, 11</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-stdout points="3">
+                <value>Found the data at Node A</value>
+            </test-stdout>
+            <test-subr>
+                <answer>x6000</answer>
+                <points>
+                    <answer>2</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>2</params>
+                    <read-answer>0</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+</test-suite>
