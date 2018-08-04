@@ -1,0 +1,182 @@
+<test-suite>
+    <test-case>
+        <name>toUpper("test")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>test</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>TEST</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("i have spaces")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>i have spaces</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>I HAVE SPACES</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("i have numbers 1 2 and 3")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>i have numbers 1 2 and 3</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>I HAVE NUMBERS 1 2 AND 3</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("I have CAPS")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>I have CAPS</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>I HAVE CAPS</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("I have\nother things")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>I have\nother things</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>I HAVE\nOTHER THINGS</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value></value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value></value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("more numbers 321 111")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>more numbers 321 111</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>MORE NUMBERS 321 111</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("fIx Me")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>fIx Me</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>FIX ME</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("ALREADY CAPS")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>ALREADY CAPS</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>ALREADY CAPS</value>
+            </test-string>
+        </output>
+    </test-case>
+    <test-case>
+        <name>toUpper("1ast 0ne")</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-string>
+                <address>STRING</address>
+                <value>1ast 0ne</value>
+            </test-string>
+        </input>
+        <output>
+            <test-string condition="equals" points="3">
+                <address>STRING</address>
+                <value>1AST 0NE</value>
+            </test-string>
+        </output>
+    </test-case>
+</test-suite>

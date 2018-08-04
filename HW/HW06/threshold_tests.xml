@@ -1,0 +1,252 @@
+<test-suite>
+    <test-case>
+        <name>threshold([0], threshold=2)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>0</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>1</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>2</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>NO\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([1, 2, 3], threshold=2)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1, 2, 3</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>3</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>2</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>NO\nEQUAL\nYES\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([-1, 0, 0, 1], threshold=0)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-1, 0, 0, 1</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>4</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>0</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>NO\nEQUAL\nEQUAL\nYES\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([], threshold=2)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>0</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>0</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>2</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value></value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([10, -3, 2, 4, -15], threshold=-1)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>10, -3, 2, 4, -15</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>-1</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>YES\nNO\nYES\nYES\nNO\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([-79, 85, 72, 34, 79], threshold=0)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-79, 85, 72, 34, 79</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>0</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>NO\nYES\nYES\nYES\nYES\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([-90, 56, -76, -39, 73, -58, 94, -35, 83, 63], threshold=50)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-90, 56, -76, -39, 73, -58, 94, -35, 83, 63</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>10</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>50</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>NO\nYES\nNO\nNO\nYES\nNO\nYES\nNO\nYES\nYES\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([66, 45, 46, -89, 1, 21, -64, 92, -83, -46, 40, -93, 72, 53, -39], threshold=-50)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>66, 45, 46, -89, 1, 21, -64, 92, -83, -46, 40, -93, 72, 53, -39</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>15</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>-50</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>YES\nYES\nYES\nNO\nYES\nYES\nNO\nYES\nNO\nYES\nYES\nNO\nYES\nYES\nYES\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([-95, -44, -42, 81, 71, 12, -66, -76, -72, 91, -77, 38, -70, 10, -35, -40, -16, -92, -47, 44], threshold=99)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-95, -44, -42, 81, 71, 12, -66, -76, -72, 91, -77, 38, -70, 10, -35, -40, -16, -92, -47, 44</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>20</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>99</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>NO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+    <test-case>
+        <name>threshold([37, 86, -53, 88, -65], threshold=-99)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>37, 86, -53, 88, -65</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+            <test-value>
+                <address>THRESHOLD</address>
+                <value>-99</value>
+            </test-value>
+        </input>
+        <output>
+            <test-stdout condition="equals" points="3">
+                <value>YES\nYES\nYES\nYES\nYES\n</value>
+            </test-stdout>
+        </output>
+    </test-case>
+</test-suite>

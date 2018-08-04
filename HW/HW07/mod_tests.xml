@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-suite>
+<test-case>
+        <name>mod(15, 5)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>15, 5</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>0</answer>
+                <calls>
+                    <call><name>mod</name><params>10, 5</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(3, 2)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>3, 2</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>1</answer>
+                <calls>
+                    <call><name>mod</name><params>1, 2</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(99, 11)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>99, 11</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>0</answer>
+                <calls>
+                    <call><name>mod</name><params>88, 11</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(57, 8)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>57, 8</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>1</answer>
+                <calls>
+                    <call><name>mod</name><params>49, 8</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(7, 3)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>7, 3</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>1</answer>
+                <calls>
+                    <call><name>mod</name><params>4, 3</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(5, 5)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>5, 5</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>0</answer>
+                <calls>
+                    <call><name>mod</name><params>0, 5</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(100, 2)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>100, 2</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>0</answer>
+                <calls>
+                    <call><name>mod</name><params>98, 2</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(3, 5)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>3, 5</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>3</answer>
+                <points>
+                    <answer>5</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(4, 6)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>4, 6</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>4</answer>
+                <points>
+                    <answer>5</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>mod(1, 100)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-subr>
+                <name>mod</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>1, 100</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>1</answer>
+                <points>
+                    <answer>5</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+
+</test-suite>

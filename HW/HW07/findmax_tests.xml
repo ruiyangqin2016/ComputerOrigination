@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-suite>
+<test-case>
+        <name>findmax([1,2,3], 3)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1,2,3</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 3</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>3</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 2</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([3,2,1], 3)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>3,2,1</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 3</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>3</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 2</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([3,4,1,2], 4)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>3,4,1,2</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 4</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>4</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 3</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([-2,3,100,2,1], 5)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-2,3,100,2,1</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 5</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>100</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 4</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([5,5], 2)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>5,5</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 2</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>5</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 1</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([1,5,1,1,1,1,1], 7)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1,5,1,1,1,1,1</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 7</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>5</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 6</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([-1,-5,-10], 3)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-1,-5,-10</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 3</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>-1</answer>
+                <calls>
+                    <call><name>findmax</name><params>x5000, 2</params></call>
+                </calls>
+                <points>
+                    <answer>3</answer>
+                    <calls>1</calls>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                    <read-answer>1</read-answer>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([1], 1)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 1</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>1</answer>
+                <points>
+                    <answer>5</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([-2], 1)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-2</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 1</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>-2</answer>
+                <points>
+                    <answer>5</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+<test-case>
+        <name>findmax([10], 1)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <fully-randomize>1</fully-randomize>
+        <input>
+            <test-value>
+                <address>ARRAY</address>
+                <value>x5000</value>
+            </test-value>
+            <test-array>
+                <address>ARRAY</address>
+                <value>10</value>
+            </test-array>
+            <test-subr>
+                <name>findmax</name>
+                <stack>xF000</stack>
+                <r5>xCAFE</r5>
+                <r7>x8000</r7>
+                <params>x5000, 1</params>
+            </test-subr>
+        </input>
+        <output>
+            <test-subr>
+                <answer>10</answer>
+                <points>
+                    <answer>5</answer>
+                    <r7>1</r7>
+                    <r6>1</r6>
+                    <r5>1</r5>
+                    <params>1</params>
+                </points>
+                <deductions-per-mistake>1</deductions-per-mistake>
+            </test-subr>
+        </output>
+    </test-case>
+    
+
+</test-suite>

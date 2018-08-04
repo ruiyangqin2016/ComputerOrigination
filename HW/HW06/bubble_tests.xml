@@ -1,0 +1,222 @@
+<test-suite>
+    <test-case>
+        <name>bubble([1])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>1</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>1</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([3, 1, 2])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>3, 1, 2</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>3</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>1, 2, 3</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([3, -1, 5, 10, 100, 2])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>3, -1, 5, 10, 100, 2</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>6</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-1, 2, 3, 5, 10, 100</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([-6848, 5389, 4054, 1607, -5806])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-6848, 5389, 4054, 1607, -5806</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-6848, -5806, 1607, 4054, 5389</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([-3052, 6687, -7142, 1043, 6402])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-3052, 6687, -7142, 1043, 6402</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-7142, -3052, 1043, 6402, 6687</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([1945, 2741, -2064, -8176, 2056])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1945, 2741, -2064, -8176, 2056</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-8176, -2064, 1945, 2056, 2741</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([1495, -8393, 9733, -1682, 5157])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>1495, -8393, 9733, -1682, 5157</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>5</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-8393, -1682, 1495, 5157, 9733</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([9104, 6417, -4341, 9013, 8605, 1446, -4051, 2733, -8795, -9580, -8979, -489, 7286, 4249, -8818, -1905, 1829, 4520, 1700, 257])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>9104, 6417, -4341, 9013, 8605, 1446, -4051, 2733, -8795, -9580, -8979, -489, 7286, 4249, -8818, -1905, 1829, 4520, 1700, 257</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>20</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-9580, -8979, -8818, -8795, -4341, -4051, -1905, -489, 257, 1446, 1700, 1829, 2733, 4249, 4520, 6417, 7286, 8605, 9013, 9104</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([-2214, 1331, -1302, -6911, 6451, 2253, 2533, -3009, -6371, -467, 6272, 6784, 8877, 9914, -4888, -4092, 3269, -7450, 680, -3523])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>-2214, 1331, -1302, -6911, 6451, 2253, 2533, -3009, -6371, -467, 6272, 6784, 8877, 9914, -4888, -4092, 3269, -7450, 680, -3523</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>20</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-7450, -6911, -6371, -4888, -4092, -3523, -3009, -2214, -1302, -467, 680, 1331, 2253, 2533, 3269, 6272, 6451, 6784, 8877, 9914</value>
+            </test-array>
+        </output>
+    </test-case>
+    <test-case>
+        <name>bubble([2406, -3426, -8826, -244, 8993, -4537, -8637, -5718, -8310, -7936, -9673, -5206, -3325, -6644, 9839, 3183, -2810, 1094, 4589, 2856])</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>1000000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-array>
+                <address>ARRAY</address>
+                <value>2406, -3426, -8826, -244, 8993, -4537, -8637, -5718, -8310, -7936, -9673, -5206, -3325, -6644, 9839, 3183, -2810, 1094, 4589, 2856</value>
+            </test-array>
+            <test-value>
+                <address>LENGTH</address>
+                <value>20</value>
+            </test-value>
+        </input>
+        <output>
+            <test-array points="4">
+                <address>ARRAY</address>
+                <value>-9673, -8826, -8637, -8310, -7936, -6644, -5718, -5206, -4537, -3426, -3325, -2810, -244, 1094, 2406, 2856, 3183, 4589, 8993, 9839</value>
+            </test-array>
+        </output>
+    </test-case>
+</test-suite>

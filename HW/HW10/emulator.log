@@ -1,0 +1,23 @@
+Unknown configuration key throttle
+vbam: could not connect to socket
+vbam: No such file or directory
+VBA-M (BBA) [SDL]
+Searching for file vbam.cfg
+Searching current directory: /home/rqin37/Desktop/CS2110/HW10-summer18
+Searching home directory: /home/rqin37/.vbam
+Searching data directory: /usr/share/vbam
+Searching system config directory: /etc
+Reading configuration file.
+Searching for file vba-over.ini
+Searching current directory: /home/rqin37/Desktop/CS2110/HW10-summer18
+Searching home directory: /home/rqin37/.vbam
+Searching data directory: /usr/share/vbam
+Searching system config directory: /etc
+vba-over.ini NOT FOUND (using emulator settings)
+Trying patch RQ_first_GBA_game.ips
+Trying patch RQ_first_GBA_game.ups
+Trying patch RQ_first_GBA_game.ppf
+Trying to start LIRC: Failed
+Color depth: 32
+Shutting down
+18:18:38 18.07.2018: Wrote battery
