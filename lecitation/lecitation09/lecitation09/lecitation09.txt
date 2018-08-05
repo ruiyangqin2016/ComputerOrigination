@@ -1,0 +1,43 @@
+====================================================================
+CS2110                      Lecitation 09                Summer 2018
+====================================================================
+
+Objective: Code a recursive function in LC-3 Assembly.
+
+Problem
+-------
+Implement a function which will sum the digits in a decimal number:
+
+	digisum(4)   = 4
+	digisum(34)  = 7
+	digisum(714) = 12
+
+Pseudocode
+----------
+int digisum(n) {
+	int div = n / 10;
+	int mod = n % 10;
+	if(n == 0) {
+		return 0;
+	} else {
+		return mod + digisum(div);
+	}
+}
+
+Use the UDIV trap (TRAP x80) to perform division or modulus!
+    Precondition: R0 = X
+                  R1 = Y
+
+    Postcondition: R0 = X / Y
+                   R1 = X % Y
+
+Your function must follow the LC3 calling convention. This means that the
+variables in the above pseudocode "div" and "mod" must explicitly be stored
+on the stack regardless of if you can complete this without storing them.
+
+Your function must also save registers 0-4. This means that if a user calls
+your function, the values should be the same in those registers on return.
+
+We have provided a tester for you to verify that your function works:
+
+	lc3test digisum_test.xml digisum.asm

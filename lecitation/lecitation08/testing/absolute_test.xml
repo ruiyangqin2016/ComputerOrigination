@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<test-suite>
+
+    <test-case>
+        <name>absolute(1)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>10000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-value><address>U</address><value>1</value></test-value>
+            <test-value><address>ANSWER</address><value>50</value></test-value>
+        </input>
+        <output>
+            <test-value condition="equals" points="5">
+                <address>ANSWER</address><value>1</value>
+            </test-value>
+        </output>
+    </test-case>
+
+    <test-case>
+        <name>absolute(-23567)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>10000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-value><address>U</address><value>-23567</value></test-value>
+            <test-value><address>ANSWER</address><value>-50</value></test-value>
+        </input>
+        <output>
+            <test-value condition="equals" points="5">
+                <address>ANSWER</address><value>23567</value>
+            </test-value>
+        </output>
+    </test-case>
+
+    <test-case>
+        <name>absolute(19)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>10000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-value><address>U</address><value>19</value></test-value>
+            <test-value><address>ANSWER</address><value>-15</value></test-value>
+        </input>
+        <output>
+            <test-value condition="equals" points="5">
+                <address>ANSWER</address><value>19</value>
+            </test-value>
+        </output>
+    </test-case>
+
+    <test-case>
+        <name>absolute(-25)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>10000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-value><address>U</address><value>-25</value></test-value>
+            <test-value><address>ANSWER</address><value>15</value></test-value>
+        </input>
+        <output>
+            <test-value condition="equals" points="5">
+                <address>ANSWER</address><value>25</value>
+            </test-value>
+        </output>
+    </test-case>
+
+    <test-case>
+        <name>absolute(0)</name>
+        <has-max-executions>1</has-max-executions>
+        <max-executions>10000</max-executions>
+        <randomize>1</randomize>
+        <input>
+            <test-value><address>U</address><value>0</value></test-value>
+            <test-value><address>ANSWER</address><value>-125</value></test-value>
+        </input>
+        <output>
+            <test-value condition="equals" points="5">
+                <address>ANSWER</address><value>0</value>
+            </test-value>
+        </output>
+    </test-case>
+
+</test-suite>
